@@ -77,7 +77,7 @@ namespace EFOrderManagement
         {
             using (var context = new OrderContext())
             {
-                return context.OrderDetails.Include("IOrder")
+                return context.OrderDetails
                      .Where(od => od.GoodName == goodName).ToList();
             }
         }

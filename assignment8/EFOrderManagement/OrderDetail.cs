@@ -16,7 +16,7 @@ namespace EFOrderManagement
         [Key, Column(Order = 0)]
         //public int OrderId { get=>IOrder.OrderId; }//订单号
         public int OrderId { get; set; }
-        public Order IOrder { set; get; }
+       
       //  public Order IOrder { set; get; }
         [Key, Column(Order = 1)]
         public int GoodId { get; set; }//货物号
